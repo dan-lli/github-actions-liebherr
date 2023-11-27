@@ -11,4 +11,10 @@ on:
     - cron: "15 6 * * SUN"
   workflow_dispatch:
     
-  
+jobs:
+  Build:
+    name: "Build Job"
+    runs-on: "ubuntu-latest"
+    steps:
+    - name: Test
+      run: echo github.event_name

@@ -17,4 +17,4 @@ jobs:
     runs-on: "ubuntu-latest"
     steps:
     - name: Test
-      run: echo github.event_name
+      run: github.event_name
